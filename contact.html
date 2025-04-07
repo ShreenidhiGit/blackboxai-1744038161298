@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header/Navbar -->
+  <header class="sticky top-0 bg-white shadow-md z-50">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Portfolio</a>
+      <div class="flex space-x-6">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="projects.html" class="hover:text-blue-600">Projects</a>
+        <a href="contact.html" class="text-blue-600 font-medium">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="container mx-auto px-6 py-20">
+    <h1 class="text-4xl font-bold text-center mb-12">Get In Touch</h1>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <form id="contactForm" class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+            <input type="text" id="name" name="name" 
+                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                   required>
+            <p id="nameError" class="text-red-500 text-sm mt-1 hidden">Please enter your name</p>
+          </div>
+          
+          <div>
+            <label for="email" class="block text-gray-700 mb-2">Email</label>
+            <input type="email" id="email" name="email"
+                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                   required>
+            <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email</p>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-gray-700 mb-2">Message</label>
+            <textarea id="message" name="message" rows="4"
+                      class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      required></textarea>
+            <p id="messageError" class="text-red-500 text-sm mt-1 hidden">Please enter your message</p>
+          </div>
+          
+          <button type="submit" 
+                  class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info & Map -->
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-4">Contact Information</h2>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4"></i>
+              <p>123 Main Street, San Francisco, CA 94107</p>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-envelope text-blue-600 mr-4"></i>
+              <p>contact@myportfolio.com</p>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-phone text-blue-600 mr-4"></i>
+              <p>(123) 456-7890</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.32553883596!2d-122.4194159241366!3d37.77492997189945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex justify-center space-x-6 mb-6">
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-lg"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-lg"></i></a>
+      </div>
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
